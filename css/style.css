@@ -44,7 +44,7 @@ img {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgba(102, 0, 0, 1);
+    background-color: rgb(25, 0, 255);
     color: rgba(0, 0, 0, 0.8); 
     padding: 1em;
     display: grid;
@@ -88,9 +88,9 @@ main {
 
 /* HERO SECTION */
 .hero {
-    background-color: rgba(102, 0, 0, 1);
+    background-color: rgb(4, 0, 255);
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 6em 1em;
 }
 
@@ -182,8 +182,12 @@ aside {
 }
 
 .page-home .hero {
-    /* background-image:url('../images/greenleaves.jpg'); */
-    padding-top: 10em;
+    background-image:url('../images/indy.jpeg'); 
+    background-repeat: no-repeat;
+    background-position: center 15%;
+    background-size: cover;
+    padding-top: 15em;
+    padding-bottom: 10em;
 }
 
 
@@ -240,3 +244,70 @@ dd {
     border: 1px solid rgba(0,0,0,.1) !important;
     color: rgba(0,0,0,.5) !important;
 } */
+
+/* Custom text  */
+
+
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n+1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n+2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n+3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n+4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n+5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.svg-wrapper {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    font: 8em/1 Open Sans, Impact;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+svg {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
